@@ -11,7 +11,7 @@ export const identity = {
   title: "Full-Stack Engineer · AI Builder · Automation Architect",
   location: "Astana, Kazakhstan",
   timezoneLabel: "GMT+5",
-  timezone: "Asia/Astana",
+  timezone: "Asia/Almaty",
   languages: ["English", "Russian", "Kazakh"],
   email: "dias.urazov17@gmail.com",
   instagram: "https://instagram.com/diasurazov",
