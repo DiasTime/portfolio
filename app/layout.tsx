@@ -1,45 +1,37 @@
 import type { Metadata } from "next";
-import { Instrument_Serif, Archivo, IBM_Plex_Mono } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import { identity } from "@/lib/content";
 import "./globals.css";
 
-const serif = Instrument_Serif({
-  subsets: ["latin"],
-  weight: "400",
-  style: ["normal", "italic"],
-  variable: "--font-serif",
-});
-
-const sans = Archivo({
+const sans = Geist({
   subsets: ["latin"],
   variable: "--font-sans",
 });
 
-const mono = IBM_Plex_Mono({
+const mono = Geist_Mono({
   subsets: ["latin"],
-  weight: ["400", "500"],
   variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
-  title: `${identity.name} — Full-Stack & AI Developer | Automation Engineer | Product Builder`,
+  title: `${identity.name} — Full-Stack Engineer · AI Builder · Automation Architect`,
   description:
-    "I build software that pays for itself: AI integrations, business automation, SaaS products, lead generation systems, and high-performance web platforms for businesses that measure results.",
+    "I engineer systems that run businesses: AI agents, business automation, SaaS products, lead-generation infrastructure, and commercial real estate technology — designed, built, and shipped end to end.",
   keywords: [
-    "full-stack developer",
+    "full-stack engineer",
     "AI developer",
-    "automation engineer",
+    "automation architect",
     "product builder",
-    "AI integration",
+    "AI agents",
     "business automation",
     "SaaS development",
     "lead generation systems",
     "commercial real estate technology",
   ],
   openGraph: {
-    title: `${identity.name} — Software that pays for itself`,
+    title: `${identity.name} — I engineer systems that run businesses`,
     description:
-      "AI integrations, business automation, and revenue-driving digital products. Designed, engineered, and shipped end to end.",
+      "AI agents, business automation, and software that generates revenue and scales operations. One engineer, end to end.",
     type: "website",
   },
 };
@@ -47,9 +39,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${serif.variable} ${sans.variable} ${mono.variable}`}>
-        {children}
-      </body>
+      <body className={`${sans.variable} ${mono.variable}`}>{children}</body>
     </html>
   );
 }

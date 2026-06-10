@@ -1,15 +1,14 @@
 // ─────────────────────────────────────────────────────────────
 // SINGLE SOURCE OF TRUTH for every word on the site.
-// Edit identity, copy, and case studies here — nothing is
-// hard-coded inside components.
+// Edit identity, copy, modules, and case systems here —
+// nothing is hard-coded inside components.
 // ─────────────────────────────────────────────────────────────
 
 export const identity = {
   name: "Dias Urazov",
-  shortName: "D. Urazov",
-  monogram: "DU",
-  title: "Full-Stack & AI Developer",
-  roles: ["Full-Stack Developer", "AI Developer", "Automation Engineer", "Product Builder"],
+  os: "DU/OS",
+  version: "v2.026",
+  title: "Full-Stack Engineer · AI Builder · Automation Architect",
   location: "Astana, Kazakhstan",
   timezoneLabel: "GMT+5",
   timezone: "Asia/Almaty",
@@ -17,301 +16,426 @@ export const identity = {
   email: "daniel.millward@wardenglish.com",
   instagram: "https://instagram.com/DANDBWEB",
   instagramHandle: "@DANDBWEB",
-  availability: "Accepting new projects",
+  availability: "ACCEPTING NEW PROJECTS",
 };
+
+export const boot = [
+  "DU/OS v2.026 — personal engineering system",
+  "> loading neural core .................. ok",
+  "> mounting agents [5/5] ................ ok",
+  "> automations online ................... ok",
+  "> linking production systems [3/3] ..... ok",
+  "> access granted — welcome, visitor",
+];
 
 export const hero = {
-  kicker: "Full-Stack Developer · AI Engineer · Product Builder",
-  headlineTop: "Software that",
-  headlineEm: "pays for itself.",
-  lede:
-    "I design and ship complete business systems — AI integrations, automated operations, and high-performance digital products that generate leads, cut manual work, and scale revenue. Not just websites: working assets.",
-  ctaPrimary: "Start a project",
-  ctaSecondary: "View case studies",
-  facts: [
-    { label: "Base", value: "Astana — working worldwide" },
-    { label: "Languages", value: "English · Russian · Kazakh" },
-    { label: "Scope", value: "Strategy → build → run" },
-  ],
+  sysLines: ["DU/OS v2.026 — PERSONAL ENGINEERING SYSTEM", "OPERATOR: DIAS URAZOV — ASTANA / GMT+5"],
+  name: "DIAS URAZOV",
+  nameTag: "OPERATOR · DU-001",
+  kicker: "FULL-STACK ENGINEER · AI BUILDER · AUTOMATION ARCHITECT",
+  h1a: "I engineer systems",
+  h1b: "that run businesses.",
+  sub: "Software that automates operations, generates revenue, and scales without headcount — designed, built, and shipped end to end by one engineer.",
+  ctaPrimary: "Initialize project",
+  ctaSecondary: "Explore the system",
+  scrollHint: "SCROLL TO ENTER SYSTEM",
+  // Act 2 — the camera dives into the core and the operator ID resolves.
+  act2: {
+    title: "OPERATOR.ID — DU-001",
+    rows: [
+      { k: "WHO", v: "Full-stack & AI engineer. One person, the entire system — design to deploy." },
+      { k: "WHAT", v: "AI agents, business automation, commerce engines, SaaS products." },
+      { k: "WHY", v: "Because software should pay for itself — or it's decoration." },
+      { k: "EDGE", v: "I think in P&L, not in pages. Business outcome first, code second." },
+    ],
+    chips: ["EN · RU · KZ", "ASTANA · GMT+5", "FULL CYCLE — SOLO"],
+  },
 };
 
-export const marquee = [
-  "AI Integration",
-  "Business Automation",
-  "SaaS Development",
-  "E-Commerce Engines",
-  "Lead Generation",
-  "CRE Technology",
-  "Custom Software",
+export const ticker = [
+  "MODULES ONLINE 6/6",
+  "AGENTS RUNNING 5/5",
+  "PRODUCTION SYSTEMS 3",
+  "REGION — ASTANA · GMT+5",
+  "LANG — EN · RU · KZ",
+  "STATUS — ACCEPTING PROJECTS",
+  "FOCUS — AI · AUTOMATION · CRE TECH",
 ];
 
-export const capabilities = {
-  kicker: "Capabilities",
-  heading: "Built for business outcomes,",
-  headingEm: "not tech demos.",
-  items: [
-    {
-      index: "01",
-      title: "AI Integration",
-      body:
-        "LLM-powered features embedded where they create margin — document intelligence, support copilots, content pipelines, and decision automation that compress hours of work into seconds.",
-    },
-    {
-      index: "02",
-      title: "Business Automation",
-      body:
-        "I replace manual operations with systems that run around the clock: data syncs, approvals, reporting, follow-ups. Your team does the thinking; software does the repetition.",
-    },
-    {
-      index: "03",
-      title: "SaaS & Product Development",
-      body:
-        "From idea to billable product — architecture, build, launch, iteration. I've shipped commerce engines, learning platforms, and operations tools end to end, solo.",
-    },
-    {
-      index: "04",
-      title: "High-Performance Web Platforms",
-      body:
-        "Sites and storefronts engineered to convert: fast, multilingual, SEO-sound, and manageable by your own team — no developer required for daily operations.",
-    },
-    {
-      index: "05",
-      title: "Lead Generation Systems",
-      body:
-        "Pipelines that capture, qualify, and route demand automatically — landing systems, smart forms, scoring, CRM handoff, and instant follow-up that never forgets a prospect.",
-    },
-    {
-      index: "06",
-      title: "Commercial Real Estate Technology",
-      body:
-        "Listing platforms, property data tools, and deal-flow software for CRE teams still running on spreadsheets — purpose-built for how property deals actually move.",
-    },
+export const systemMap = {
+  kicker: "SYSTEM MAP",
+  heading: "One environment.",
+  headingAccent: "Six subsystems.",
+  sub: "Everything below is part of a single connected system. Select a module to jump into it.",
+  root: { title: "DU/OS CORE", desc: "All systems route through one operator" },
+  modules: [
+    { id: "01", title: "AI Systems", desc: "LLM agents wired into real business workflows", target: "#agents", status: "ACTIVE" },
+    { id: "02", title: "Business Automation", desc: "Operations that run on events, not on people", target: "#agents", status: "ACTIVE" },
+    { id: "03", title: "SaaS Products", desc: "Platforms built end to end, built to be sold", target: "#sys-learnloop", status: "DEPLOYED" },
+    { id: "04", title: "Commerce & Custom Software", desc: "Storefront to back office, owned in-house", target: "#sys-commerce", status: "DEPLOYED" },
+    { id: "05", title: "Lead Generation", desc: "Demand captured, qualified, and routed 24/7", target: "#sys-funnel", status: "DEPLOYED" },
+    { id: "06", title: "CRE Technology", desc: "Deal-flow software for commercial real estate", target: "#dna", status: "BUILDING" },
   ],
 };
 
-export type CaseStudy = {
-  slug: string;
-  index: string;
-  title: string;
+export const agents = {
+  kicker: "AI SYSTEMS — LIVE",
+  heading: "Agents that run",
+  headingAccent: "the pipeline.",
+  sub: "Reference architecture: the lead-to-close automation I build for clients. Five agents, zero manual handoffs — watch the data move.",
+  nodes: [
+    { id: "01", name: "CAPTURE.AGENT", role: "Forms, chat & inbound — every lead enters the system" },
+    { id: "02", name: "CRM.AGENT", role: "Creates records, deduplicates, enriches with context" },
+    { id: "03", name: "QUALIFY.AGENT", role: "LLM scoring against the ideal-customer profile" },
+    { id: "04", name: "SALES.AGENT", role: "Drafts outreach, books meetings, never forgets follow-up" },
+    { id: "05", name: "ANALYTICS.AGENT", role: "Funnel metrics, attribution, anomaly alerts" },
+  ],
+  logEvents: [
+    ["capture.agent", "lead.captured src=cre-landing", "crm.sync"],
+    ["crm.agent", "record.created — deduped, enriched", "qualify.queue"],
+    ["qualify.agent", "icp.score=0.87 → QUALIFIED", "sales.queue"],
+    ["sales.agent", "outreach.sent — meeting link attached", "analytics.track"],
+    ["analytics.agent", "funnel.cvr updated — report pushed", "dashboard"],
+    ["capture.agent", "lead.captured src=instagram-dm", "crm.sync"],
+    ["qualify.agent", "icp.score=0.31 → NURTURE", "sequence.start"],
+    ["sales.agent", "follow-up.scheduled t+48h", "calendar"],
+  ] as [string, string, string][],
+};
+
+export type CaseSystem = {
+  id: string;
+  anchor: string;
+  sysId: string;
+  codeName: string;
   client: string;
-  tagline: string;
-  year: string;
-  liveUrl: string;
-  role: string;
+  title: string;
+  sim: "commerce" | "code" | "funnel";
+  problem: string;
+  solution: string;
+  impact: string;
   stack: string[];
-  image: { src: string; alt: string };
-  problem: string[];
-  solution: string[];
-  features: string[];
-  businessValue: string;
-  results: string[];
+  liveUrl: string;
+  liveLabel: string;
+  arch: { flow: string[]; satellites: string[] };
+  outcomes: string[];
 };
 
-export const work = {
-  kicker: "Selected Work",
-  heading: "Case studies,",
-  headingEm: "not screenshots.",
-  intro:
-    "Every project below shipped to production and runs a real business. Each one is documented the way it was built — as a commercial problem with an engineered answer.",
+export const systems = {
+  kicker: "PRODUCTION SYSTEMS",
+  heading: "Shipped software,",
+  headingAccent: "running live.",
+  sub: "Three systems in production. No screenshots — each one is reconstructed below as a working simulation of what it does.",
 };
 
-export const caseStudies: CaseStudy[] = [
+export const caseSystems: CaseSystem[] = [
   {
-    slug: "willmax-commerce",
-    index: "01",
-    title: "Willmax",
+    id: "commerce",
+    anchor: "sys-commerce",
+    sysId: "SYS/01",
+    codeName: "COMMERCE.ENGINE",
     client: "Willmax — premium tableware brand",
-    tagline: "A complete commerce engine for a premium brand — storefront to back office.",
-    year: "2024",
+    title: "A commerce engine the brand operates itself",
+    sim: "commerce",
+    problem:
+      "A premium brand with no direct channel: no customer data, no margin control, and a catalog that needed a developer for every update.",
+    solution:
+      "Full commerce platform — storefront, orders, stock, bilingual RU/KZ content — driven from one admin panel, with the entire catalog updated through a single Excel import.",
+    impact:
+      "Daily operations need zero developer time. The brand owns its channel, its data, and its margins.",
+    stack: ["Next.js", "TypeScript", "Firebase", "Cloudinary"],
     liveUrl: "https://wilmax.vercel.app/",
-    role: "Design, full-stack development, infrastructure",
-    stack: ["Next.js", "React", "TypeScript", "Firebase", "Cloudinary", "Vercel"],
-    image: { src: "/work/willmax.png", alt: "Willmax e-commerce storefront" },
-    problem: [
-      "Willmax sells premium tableware, borosilicate glassware, and kitchen accessories. The brand needed a direct sales channel that matched the quality of the product — and full operational control behind it.",
-      "The hard requirement wasn't the storefront. It was everything after the click: catalog management across hundreds of SKUs, stock control, order processing, and content in two languages — all without calling a developer for daily operations.",
-    ],
-    solution: [
-      "I built a complete commerce platform: a fast, premium storefront with full-text search and filtering, cart and checkout, and a custom administration panel covering products, categories, orders, and inventory.",
-      "Operational friction was engineered out deliberately. Catalog updates happen through a single Excel upload instead of item-by-item editing. Media runs through a Cloudinary pipeline. Admin access is hardened with brute-force protection. The entire experience ships in Russian and Kazakh with SEO and performance budgets enforced.",
-    ],
-    features: [
-      "Premium responsive storefront with search and filtering",
-      "Cart, checkout, and full order lifecycle management",
-      "Custom admin panel — products, orders, categories, stock",
-      "Bulk catalog import from Excel files",
-      "Cloudinary media pipeline for product imagery",
-      "Hardened admin authentication with brute-force protection",
-      "Russian / Kazakh localization",
-      "SEO optimization and performance tuning",
-    ],
-    businessValue:
-      "The brand owns its sales channel end to end. The team runs daily commerce operations — catalog, stock, orders, content — entirely in-house, in two languages, from one panel.",
-    results: [
-      "Catalog updates went from developer tickets to a self-serve Excel upload",
-      "The full order lifecycle is managed from a single admin panel",
-      "Bilingual storefront serving the Kazakhstani market from day one",
-      "Zero developer dependency for day-to-day operations",
+    liveLabel: "wilmax.vercel.app",
+    arch: {
+      flow: [
+        "CUSTOMER — bilingual storefront, search, cart",
+        "NEXT.JS CORE — catalog, checkout, SEO layer",
+        "FIREBASE — orders, stock, hardened auth",
+        "ADMIN PANEL — products, orders, categories",
+        "OWNER — full control, zero developer tickets",
+      ],
+      satellites: ["Cloudinary media pipeline", "Excel bulk import", "Brute-force shield", "RU/KZ locales"],
+    },
+    outcomes: [
+      "Catalog updates: developer tickets → self-serve Excel upload",
+      "Entire order lifecycle managed from one panel",
+      "Bilingual storefront serving the market from day one",
+      "Zero developer dependency in daily operations",
     ],
   },
   {
-    slug: "interactive-learning-platform",
-    index: "02",
-    title: "CodeCourse",
+    id: "learnloop",
+    anchor: "sys-learnloop",
+    sysId: "SYS/02",
+    codeName: "LEARN.LOOP",
     client: "Online education provider",
-    tagline: "A code-first learning platform where students don't watch — they build.",
-    year: "2024",
+    title: "A learning platform that grades itself",
+    sim: "code",
+    problem:
+      "Video courses create viewers, not engineers — and every new student added manual grading hours. Growth was capped by instructor time.",
+    solution:
+      "In-browser code editor, automated test-based grading, progress analytics, and a certification track. The feedback loop runs itself, in seconds.",
+    impact:
+      "Scales to any cohort size with zero added instructor hours. Certification became the sellable premium tier.",
+    stack: ["Next.js", "TypeScript", "Node.js", "MongoDB"],
     liveUrl: "",
-    role: "Product design, full-stack development",
-    stack: ["Next.js", "React", "TypeScript", "Node.js", "MongoDB"],
-    image: { src: "/work/courses.png", alt: "Interactive learning platform interface" },
-    problem: [
-      "Video-only courses produce viewers, not practitioners. The client needed a platform where students write real code, get instant feedback, and finish with verifiable skills — without an instructor manually reviewing every submission.",
-      "At scale, manual grading is the business bottleneck: every new student adds instructor hours. The platform had to break that link.",
-    ],
-    solution: [
-      "I built an end-to-end learning product: interactive lessons with embedded video, an in-browser code editor, and automated test-based grading that gives students feedback in seconds instead of days.",
-      "Around that core loop sits the full product: progress tracking and analytics, discussion forums, a certification track with final assessments, completion certificates, gamification to drive course completion, and a mobile experience for learning anywhere.",
-    ],
-    features: [
-      "Interactive course content with video lessons",
-      "In-browser code editor for hands-on practice",
-      "Automated code testing with instant feedback",
-      "Progress tracking and learner analytics",
-      "Certification program with final assessments",
-      "Discussion forums and learner community",
-      "Gamification mechanics for engagement",
-      "Fully responsive mobile learning experience",
-    ],
-    businessValue:
-      "Assessment runs itself — the platform scales to thousands of learners with zero added instructor hours. Certification creates a premium tier, and analytics expose exactly where students drop off.",
-    results: [
-      "Fully automated grading loop — no manual review at any scale",
-      "Certification track packaged as a sellable premium tier",
-      "Complete funnel visibility: enrollment → progress → completion",
-      "Self-serve learning product that runs without daily operation",
+    liveLabel: "demo on request",
+    arch: {
+      flow: [
+        "STUDENT — writes real code in the browser",
+        "SUBMISSION — code + task context",
+        "TEST RUNNER — automated grading engine",
+        "FEEDBACK — returned in seconds, not days",
+        "CERTIFICATE — verified, sellable skill",
+      ],
+      satellites: ["Progress analytics", "Discussion forums", "Gamification", "Mobile learning"],
+    },
+    outcomes: [
+      "Zero added instructor hours at any cohort size",
+      "Certification packaged as the premium tier",
+      "Full funnel visibility: enroll → progress → complete",
+      "Runs without daily human operation",
     ],
   },
   {
-    slug: "premium-shower-systems",
-    index: "03",
-    title: "InterDiv",
-    client: "Premium shower cabin company",
-    tagline: "A digital showroom that turns online researchers into booked consultations.",
-    year: "2024",
+    id: "funnel",
+    anchor: "sys-funnel",
+    sysId: "SYS/03",
+    codeName: "LEAD.FUNNEL",
+    client: "InterDiv — premium shower systems",
+    title: "A digital showroom that books consultations",
+    sim: "funnel",
+    problem:
+      "Premium products sold only through physical showrooms — invisible during online research, losing buyers before first contact.",
+    solution:
+      "Digital showroom with full specs, 3D visualization and product configuration, wired into consultation forms that qualify and book prospects automatically.",
+    impact:
+      "A 24/7 lead channel. Prospects arrive at the showroom pre-sold, pre-configured, and pre-qualified.",
+    stack: ["Next.js", "React", "TypeScript", "Vercel"],
     liveUrl: "https://inter-div.vercel.app/",
-    role: "Design, development, lead-capture strategy",
-    stack: ["React", "Next.js", "TypeScript", "Vercel"],
-    image: { src: "/work/interdiv.png", alt: "Premium shower systems digital showroom" },
-    problem: [
-      "Premium bathroom products sell through physical showrooms — but buyers research online first. The company's product line was effectively invisible during the phase when customers compare options from home.",
-      "Every undocumented product and unanswered question online was a customer walking into a competitor's showroom instead.",
-    ],
-    solution: [
-      "I built a digital showroom that does the first half of the sales job: a complete product catalog with detailed specifications, high-fidelity imagery and 3D visualization, and cabin customization options that let buyers configure before they commit.",
-      "The site is engineered as a lead engine — consultation forms, a physical showroom locator, installation guidance, and embedded customer reviews move researchers from anonymous browsing to a booked, qualified conversation.",
-    ],
-    features: [
-      "Product catalog with full technical specifications",
-      "High-fidelity imagery and 3D visualization",
-      "Shower cabin customization options",
-      "Showroom locator for offline conversion",
-      "Consultation and contact forms as lead capture",
-      "Installation guides and after-sales support content",
-      "Customer reviews and social proof",
-      "Responsive design across all devices",
-    ],
-    businessValue:
-      "The sales conversation now starts online, on the company's terms. Prospects arrive at the showroom pre-sold — they've already configured, compared, and committed to a shortlist.",
-    results: [
-      "A 24/7 lead channel where there was previously none",
-      "Consultation forms qualify buyers before they reach the showroom",
-      "Premium product line fully documented and searchable online",
-      "Showroom traffic backed by informed, high-intent visitors",
+    liveLabel: "inter-div.vercel.app",
+    arch: {
+      flow: [
+        "VISITOR — researching premium cabins online",
+        "DIGITAL SHOWROOM — full specs + 3D visuals",
+        "CONFIGURATOR — builds their own cabin",
+        "CONSULTATION FORM — qualified, booked lead",
+        "SHOWROOM — buyer arrives pre-sold",
+      ],
+      satellites: ["Showroom locator", "Customer reviews", "Install guides"],
+    },
+    outcomes: [
+      "A 24/7 lead channel where none existed",
+      "Leads qualified before first human contact",
+      "Full product line searchable online",
+      "Showroom visits arrive pre-sold and configured",
     ],
   },
 ];
 
-export const process = {
-  kicker: "Process",
-  heading: "From business problem",
-  headingEm: "to running system.",
-  steps: [
+export const operator = {
+  kicker: "OPERATOR FILE",
+  heading: "Built by one engineer.",
+  headingAccent: "On purpose.",
+  story: [
+    "I started as the developer behind D&B Web — a small studio in Astana shipping commercial sites and stores for real businesses: education, premium e-commerce, manufacturing.",
+    "Client work taught me the lesson that now defines everything I build: nobody buys software — they buy outcomes. The Excel import that saved a catalog manager her week mattered more than any animation I ever shipped.",
+    "So I stopped selling websites. Today I build the systems behind businesses — AI agents, automation, lead engines, commerce platforms — and I measure my work in hours saved and revenue created.",
+  ],
+  philosophy: [
+    { n: "01", t: "Pays for itself", d: "If software doesn't return more than it cost, it's decoration." },
+    { n: "02", t: "Automate repetition, keep judgment", d: "Machines run the loop; humans make the call." },
+    { n: "03", t: "Ship weekly", d: "Working software every week. No big reveals, no surprises." },
+    { n: "04", t: "One pair of hands", d: "Design to deploy by one engineer — total accountability, zero handoff loss." },
+  ],
+  timeline: [
     {
-      index: "01",
-      title: "Diagnose",
-      body: "We start with the P&L, not the feature list. Where is money leaking — what's manual, what's slow, what's leaking leads.",
+      year: "2024",
+      title: "First production systems",
+      desc: "Willmax commerce engine, the CodeCourse learning platform, and the InterDiv lead engine — designed, built, and shipped solo.",
     },
     {
-      index: "02",
-      title: "Design",
-      body: "Scope cut to what moves the number. Clear architecture, honest timeline, priorities fixed before a line of code.",
+      year: "2025",
+      title: "D&B Web — client delivery",
+      desc: "Ran a studio delivering platforms for businesses across Kazakhstan, in two languages, with support clients actually praise.",
     },
     {
-      index: "03",
-      title: "Build",
-      body: "Production-grade engineering in focused sprints. Working software every week — not a big reveal at the end.",
-    },
-    {
-      index: "04",
-      title: "Automate",
-      body: "AI and automation layered where they compound: fewer hands in the loop, faster cycles, cleaner data.",
-    },
-    {
-      index: "05",
-      title: "Run",
-      body: "Launch is the start, not the finish. Monitoring, support, and iteration as the product meets real users.",
+      year: "2026",
+      title: "AI & automation focus",
+      desc: "Full pivot to AI agents, business automation, and commercial real estate technology. Systems that run while their owners sleep.",
     },
   ],
 };
 
-export const about = {
-  kicker: "About",
-  heading: "Developer by craft.",
-  headingEm: "Operator by instinct.",
-  paragraphs: [
-    "I'm Dias Urazov — a full-stack developer and product builder based in Astana. I started out running D&B Web, shipping commercial sites and stores for businesses across Kazakhstan: education platforms, premium e-commerce, manufacturing companies.",
-    "That client work taught me the lesson that now defines how I build: nobody buys software — they buy outcomes. Today I focus on systems where the outcome is measurable: AI integrations that remove manual work, automation that runs operations overnight, lead engines that fill pipelines, and products built to be sold.",
-    "I work in English, Russian, and Kazakh, and I work best with founders and operators who judge software by what it returns.",
+export const stackGraph = {
+  kicker: "TECHNOLOGY ECOSYSTEM",
+  heading: "A stack that behaves",
+  headingAccent: "like infrastructure.",
+  sub: "Not a list of logos — a connected system. Hover a node to see what it does and what it talks to.",
+  center: { id: "nextjs", label: "Next.js", role: "Application platform — every system above runs on it" },
+  nodes: [
+    { id: "typescript", label: "TypeScript", role: "Type-safe core language across every layer" },
+    { id: "postgres", label: "PostgreSQL", role: "System of record" },
+    { id: "supabase", label: "Supabase", role: "Auth, storage & realtime data" },
+    { id: "prisma", label: "Prisma", role: "Typed data-access layer" },
+    { id: "redis", label: "Redis", role: "Cache, queues & rate limiting" },
+    { id: "openai", label: "OpenAI / Claude", role: "Reasoning & generation APIs" },
+    { id: "langchain", label: "LangChain", role: "Agent & RAG orchestration" },
+    { id: "n8n", label: "n8n", role: "Workflow automation fabric" },
+    { id: "docker", label: "Docker", role: "Packaging & self-hosted deploys" },
+    { id: "vercel", label: "Vercel", role: "Edge infrastructure & CI/CD" },
   ],
-  stack: [
-    "TypeScript", "React", "Next.js", "Node.js", "Express",
-    "PostgreSQL", "MongoDB", "Firebase", "Claude & OpenAI APIs",
-    "Docker", "CI/CD", "Cloudinary",
+  edges: [
+    ["nextjs", "typescript"],
+    ["nextjs", "vercel"],
+    ["nextjs", "prisma"],
+    ["prisma", "postgres"],
+    ["supabase", "postgres"],
+    ["nextjs", "supabase"],
+    ["nextjs", "redis"],
+    ["nextjs", "openai"],
+    ["langchain", "openai"],
+    ["nextjs", "langchain"],
+    ["n8n", "openai"],
+    ["n8n", "docker"],
+    ["docker", "redis"],
+    ["n8n", "nextjs"],
+  ] as [string, string][],
+};
+
+export const dna = {
+  kicker: "DEVELOPER DNA",
+  heading: "Five modules.",
+  headingAccent: "One operator.",
+  sub: "Select a module to inspect what it's made of — systems, tooling, and proof.",
+  modules: [
+    {
+      id: "fullstack",
+      code: "FS",
+      title: "Full-Stack Engineering",
+      blurb:
+        "Frontend, backend, data, infrastructure — one person, the whole system. Three production platforms designed, built, and shipped solo, end to end.",
+      systems: [
+        { label: "COMMERCE.ENGINE", href: "#sys-commerce" },
+        { label: "LEARN.LOOP", href: "#sys-learnloop" },
+        { label: "LEAD.FUNNEL", href: "#sys-funnel" },
+      ],
+      tooling: ["TypeScript", "Next.js", "Node.js", "PostgreSQL", "MongoDB"],
+      proof: [
+        "3 production platforms shipped end to end, solo",
+        "Storefront → admin → infrastructure, one pair of hands",
+        "Bilingual delivery (RU/KZ) for the Kazakhstani market",
+      ],
+    },
+    {
+      id: "ai",
+      code: "AI",
+      title: "AI Development",
+      blurb:
+        "LLMs embedded where they create margin — not chatbots for show. Scoring, document intelligence, copilots, and content pipelines inside real workflows.",
+      systems: [{ label: "AGENT.PIPELINE", href: "#agents" }],
+      tooling: ["OpenAI API", "Claude API", "LangChain", "RAG", "Embeddings"],
+      proof: [
+        "Agent architectures for lead qualification & outreach",
+        "LLM scoring replaces manual triage",
+        "Automated grading loop in LEARN.LOOP — zero human review",
+      ],
+    },
+    {
+      id: "automation",
+      code: "AU",
+      title: "Automation Architecture",
+      blurb:
+        "Operations redesigned as event-driven systems. What used to run on people now runs on schedules, queues, and webhooks — nights and weekends included.",
+      systems: [
+        { label: "AGENT.PIPELINE", href: "#agents" },
+        { label: "COMMERCE.ENGINE", href: "#sys-commerce" },
+      ],
+      tooling: ["n8n", "Redis", "Webhooks", "Cron", "Queues"],
+      proof: [
+        "Catalog ops reduced to a single Excel upload",
+        "Order lifecycle runs without manual handoffs",
+        "Follow-ups that fire themselves — no forgotten leads",
+      ],
+    },
+    {
+      id: "product",
+      code: "PR",
+      title: "Product Thinking",
+      blurb:
+        "Scope cut to what moves the number. Every feature justified by the business case — certification tiers, self-serve ops, lead capture built into the product.",
+      systems: [
+        { label: "LEARN.LOOP", href: "#sys-learnloop" },
+        { label: "LEAD.FUNNEL", href: "#sys-funnel" },
+      ],
+      tooling: ["Funnels", "Analytics", "Pricing tiers", "Onboarding"],
+      proof: [
+        "Certification track packaged as a premium tier",
+        "Self-serve admin designed so clients never call a developer",
+        "Lead capture engineered into the product, not bolted on",
+      ],
+    },
+    {
+      id: "business",
+      code: "BZ",
+      title: "Business Systems",
+      blurb:
+        "Current focus: commercial real estate technology and lead-generation infrastructure — deal-flow tools for teams that still run on spreadsheets.",
+      systems: [
+        { label: "LEAD.FUNNEL", href: "#sys-funnel" },
+        { label: "CRE.MODULE — in development", href: "#contact" },
+      ],
+      tooling: ["CRM design", "Lead scoring", "CRE data", "Reporting"],
+      proof: [
+        "Lead engines running in production since 2024",
+        "CRE deal-flow tooling in active development",
+        "Systems judged by revenue, not by screenshots",
+      ],
+    },
   ],
 };
 
-export const testimonials = {
-  kicker: "Client Words",
-  heading: "Judged by the people",
-  headingEm: "who paid for it.",
+export const signals = {
+  kicker: "CLIENT SIGNALS",
   items: [
     {
-      quote:
-        "They delivered our corporate site fast, precisely to spec, with every request accounted for. Support is outstanding — anything we need updated or extended simply gets done.",
-      name: "Alexander Petrov",
-      company: "TechnoProm LLC",
+      quote: "Store built, CRM connected, zero downtime in a year. Sales are up and order processing is noticeably faster.",
+      name: "Dmitry Ivanov",
+      company: "FashionStyle",
     },
     {
-      quote:
-        "We needed a landing page for a new project. Delivered sharp and on schedule — the site brings in clients and the conversion rate speaks for itself. Recommended.",
+      quote: "The site brings in clients and the conversion rate speaks for itself. Delivered sharp and on schedule.",
       name: "Elena Smirnova",
       company: "ArtVector Design Studio",
     },
     {
-      quote:
-        "A year of working together: store built, CRM connected, zero downtime. The admin panel is a pleasure to use. Sales are up and order processing is noticeably faster.",
-      name: "Dmitry Ivanov",
-      company: "FashionStyle",
+      quote: "Fast, precisely to spec, every request accounted for. Anything we need updated simply gets done.",
+      name: "Alexander Petrov",
+      company: "TechnoProm LLC",
     },
   ],
 };
 
 export const contact = {
-  kicker: "Contact",
-  heading: "Have a process that",
-  headingEm: "should run itself?",
-  body:
-    "Tell me what's slow, manual, or leaking leads in your business. I'll tell you what I'd build, how long it takes, and what it should return.",
-  cta: "Write to me",
+  kicker: "CONTACT",
+  heading: "Initialize",
+  headingAccent: "a project.",
+  termLines: [
+    { prompt: true, text: "whoami" },
+    { prompt: false, text: "dias.urazov — full-stack & AI engineer · astana (GMT+5)" },
+    { prompt: true, text: "status" },
+    { prompt: false, text: "● accepting new projects", accent: true },
+    { prompt: true, text: "cat contact.txt" },
+    { prompt: false, text: "email      → daniel.millward@wardenglish.com" },
+    { prompt: false, text: "instagram  → @DANDBWEB" },
+    { prompt: true, text: 'run new-project --brief "your slowest process"' },
+    { prompt: false, text: "awaiting input", caret: true },
+  ],
+  ctaPrimary: "Send project brief",
+  ctaSecondary: "Open Instagram",
+};
+
+export const footer = {
+  left: `© 2026 DIAS URAZOV`,
+  middle: "BUILT WITH NEXT.JS · R3F · GSAP · FRAMER MOTION",
+  right: "ALL SYSTEMS OPERATIONAL",
 };
